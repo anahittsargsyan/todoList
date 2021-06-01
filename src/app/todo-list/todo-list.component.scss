@@ -1,0 +1,102 @@
+$title-color: rgba(175, 47, 47, 0.15);
+.container{
+  width: 544px;
+  border-radius: 0;
+  margin: 0 auto;
+}
+
+:host {
+  ::ng-deep {
+    .mat-checkbox-frame {
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 50%;
+  }
+   .mat-checkbox-inner-container {
+     border-color: #bdbdbd;
+     width: 30px;
+     height: 30px;
+   }
+   .mat-checkbox-label {
+    color: #535353;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   }
+   .mat-checkbox-frame {
+     border-color: #bdbdbd;
+  }
+   .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+     background-color: #ffffff;
+  }
+   .mat-checkbox-checkmark-path {
+    stroke: #62c4b1 !important;
+    border-color: #c7e0dc;
+    text-decoration: line-through;
+  }
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #c7e0dc;
+  }
+  .mat-checkbox-checked.mat-accent span{
+    text-decoration: line-through;
+    color:#bdbdbd;
+  }
+}
+}
+.footer{
+  height: 17px;
+  width: 544px;
+  border-radius: 0;
+  margin: 0 auto;
+  display: flex;
+
+}
+.counter{
+  color: #b6b6b6;
+  font-weight: 300;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.footerButton {
+  height: 32px;
+  padding: -6px;
+  font-size: 14px;
+  color: #b6b6b6;
+  font-weight: 300;
+}
+
+.footerButton:hover{
+  border: 1px solid;
+  border-color: #efd5d5;
+  background-color:#fff;
+}
+
+
+.delete{
+  display: none;
+  float: right;
+  font-size: 24px;
+  font-weight: 300;
+  color: $title-color;
+
+}
+.delete:hover{
+  color: rgba(255, 0, 0, 0.555);
+}
+.container:hover
+{
+  .delete{
+    display: inline-block;
+  }
+}
+.buttons{
+  margin-left: 110px;
+  width: 250px;
+  height: 32px;
+  margin-top: -7px;
+}
